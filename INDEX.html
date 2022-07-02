@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            position: absolute;
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+
+Doanh số bán hàng <input type="text" id="doanhSo">
+<br><br>
+Hoa hồng <input type="text" id="hoaHong">
+<br><br>
+<button onclick="tinh()">Tính</button>
+
+<p id="result"></p>
+
+<script>
+
+    function tinh() {
+
+        let doanhSo = +document.getElementById('doanhSo').value;
+        let hoaHong = +document.getElementById('hoaHong').value;
+
+        document.getElementById('result').innerText = doanhSo * hoaHong;
+
+    }
+
+</script>
+
+</body>
+</html>
